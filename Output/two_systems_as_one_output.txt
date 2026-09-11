@@ -1,0 +1,38 @@
+PART 1  A alone: CP = 1.0 (no emergence possible)   B alone: CP = 0.0
+        A x B declared as one system: microscale CP = 0.5
+        single micro->macro path (Patterns method):
+          ((0,), (1,), (2,), (3,)): CP 0.500
+          ((0,), (1,), (2, 3)): CP 0.579  gain 0.079
+          ((0, 1), (2, 3)): CP 1.000  gain 0.421
+          total causal emergence along the path: 0.500
+        (0,1)(2,3) is exactly 'the state of A'; dynamically consistent: True
+        full-lattice emergent hierarchy (Engineering Emergence method; not additive across branches):
+          ((0, 1), (2, 3)): dCP 0.421
+          ((0,), (1,), (2, 3)): dCP 0.079
+          ((0, 1), (2,), (3,)): dCP 0.079
+
+PART 2  weighted-average identity, 300 random independent pairs, random product P(C):
+        largest deviation 4.4e-16 (floating-point zero)
+        dialing the reported emergence by enlarging the appended noise system:
+          |B| =  2: CP(A x B) = 0.500   emergence reported = 0.500
+          |B| =  4: CP(A x B) = 0.333   emergence reported = 0.667
+          |B| =  8: CP(A x B) = 0.250   emergence reported = 0.750
+          |B| = 16: CP(A x B) = 0.200   emergence reported = 0.800
+          |B| = 64: CP(A x B) = 0.143   emergence reported = 0.857
+
+PART 3  CE 1.0 contrast: EI(A x B) = EI(A) + EI(B); largest deviation over 300 pairs 1.2e-15
+        |B| = 2: EI at joint microscale 1.000, max EI over all partitions 1.000  -> CE 1.0 reports no emergence
+        |B| = 4: EI at joint microscale 1.000, max EI over all partitions 1.000  -> CE 1.0 reports no emergence
+
+PART 4  emergent hierarchy (full lattice) of A x B; A alone has none
+        |B| = 2: 3 scales with dCP > 0.01, spanning levels (number of blocks) [2, 3]
+                 scales whose blocks mix different states of A: 0
+        |B| = 4: 196 scales with dCP > 0.01, spanning levels (number of blocks) [2, 3, 4, 5, 6, 7]
+                 scales whose blocks mix different states of A: 0
+
+PART 5  |B| = 4: 6480 maximal paths end at pi_A; total CE on every path [np.float64(0.666667)]; emergent complexity 1.43 to 1.73 bits
+
+PART 6  A autonomous, B copies A's state with probability q (else a coin flip):
+        q = 0.0: joint CP 0.500, CP(pi_A) 1.000, consistent True
+        q = 0.5: joint CP 0.500, CP(pi_A) 1.000, consistent True
+        q = 0.9: joint CP 0.500, CP(pi_A) 1.000, consistent True
