@@ -8,10 +8,10 @@ Charles S. Thomas · Epistria, LLC · ORCID [0009-0007-6330-1053](https://orcid.
 
 | File | Contents |
 | - | - |
-| Causal Emergence 2.0 Is Not Invariant Under Adjoining an Independent System.pdf | The technical note |
-| two\_systems\_as\_one.py | Script that reproduces every numerical value reported in the note |
-| two\_systems\_as\_one\_output.txt | The script's full output, as produced for the note |
-| README.md | This file |
+| `Causal Emergence 2.0 Is Not Invariant Under Adjoining an Independent System.pdf` | The technical note |
+| `two\_systems\_as\_one.py` | Script that reproduces principle numerical results reported in the note |
+| `two\_systems\_as\_one\_output.txt` | The script's full output, as produced for the note |
+| `README.md` | This file |
 
 
 ## The result in brief
@@ -48,7 +48,7 @@ The general form: for independent systems, CE 2.0's causal primitives (CP) for t
 
 The script uses the causal emergence toolkit published by the CE 2.0 authors, pymergence (Jansma & Hoel 2025), at the commit used for the note.
 
-Requirements: Python 3 with the packages numpy, networkx and matplotlib.
+Requirements: Python 3 with the packages `numpy`, `networkx` and `matplotlib`.
 
 ```
 pip install numpy networkx matplotlib  
@@ -59,7 +59,7 @@ cd ..
 python two\_systems\_as\_one.py
 ```
 
-Run the last command from the folder that contains both two\_systems\_as\_one.py and the pymergence folder. The run takes about two minutes. Its output should match two\_systems\_as\_one\_output.txt line for line.
+Run the last command from the folder that contains both `two\_systems\_as\_one.py` and the `pymergence` folder. The run takes about two minutes. Its output should match `two\_systems\_as\_one\_output.txt` line for line.
 
 This procedure was checked in a clean environment (Python 3.11, numpy 2.4, networkx 3.6, matplotlib 3.10). The output was identical to the file in this record.
 
@@ -81,7 +81,7 @@ Thomas, C. S. (2026). *Causal Emergence 2.0 Is Not Invariant Under Adjoining an 
 ## License
 
 ```
-MIT License Copyright (c) 2026 C.S. Thomas
+The technical note is licensed CC BY-NC 4.0. The reproduction script is licensed under the MIT License. Copyright (c) 2026 C.S. Thomas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
